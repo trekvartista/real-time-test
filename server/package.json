@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon websocket.js"
+        "dev": "nodemon long-polling.js"
     },
     "keywords": [],
     "author": "",
