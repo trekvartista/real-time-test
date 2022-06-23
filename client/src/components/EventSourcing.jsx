@@ -34,23 +34,24 @@ const EventSourcing = () => {
             <div className="flex mx-auto flex-col items-center max-w-xs">
                 <div className="flex flex-col gap-4 min-w-full">
                     <input
+						placeholder="Enter message..."
                         type="text"
                         value={value}
                         onChange={(e) => setValue(e.target.value)}
-                        className="p-4 rounded-md outline outline-2 outline-violet-500 focus:outline-[3px] focus:outline-violet-800"
+                        className="input"
                     />
                     <button
-                        className="p-1 text-lg font-semibold rounded-md bg-teal-100"
+                        className="button"
                         onClick={() => sendMessage()}
                     >
                         Send
                     </button>
                 </div>
 
-                <div className="flex flex-col min-w-full border-2 border-gray-500 p-3 gap-3 mt-12 rounded-xl">
+                <div className="messages">
                     {messages.map((msg) => (
                         <div
-                            className="p-1 rounded-md bg-teal-100"
+                            className="message"
                             key={msg.id}
                         >
                             {msg.message}

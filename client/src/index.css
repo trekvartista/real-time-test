@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.input {
+		@apply p-4 rounded-md outline outline-2 outline-violet-500 focus:outline-[3px] focus:outline-violet-800
+	}
+
+	.button {
+		@apply p-1 text-lg font-semibold rounded-md bg-teal-100
+	}
+
+	.messages {
+		@apply flex flex-col min-w-full bg-gradient-to-br from-[#fff6b7] to-teal-300 border-2 border-gray-500 p-3 gap-3 mt-12 rounded-xl
+	}
+
+	.message {
+		@apply p-1 rounded-lg bg-white
+	}
+}
