@@ -1,10 +1,10 @@
-import { useState } from "react";
+import LongPolling from "./components/LongPolling";
 
 function App() {
-
-    return <div className="text-center text-3xl">
-		Hello suka
-	</div>;
+    
+    return (
+        <LongPolling />
+    );
 }
 
 export default App;
