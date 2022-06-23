@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "nodemon long-polling.js"
+        "dev": "nodemon event-sourcing.js"
     },
     "keywords": [],
     "author": "",
